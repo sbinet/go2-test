@@ -1,20 +1,18 @@
 package ndarray
 
-type T float64
-
-type Array struct {
+type Array(type T) struct {
 	data  []T
 	shape []int
 }
 
-func New(shape []int, data T) Array {
+func New(type T)(shape []int, data T) Array {
 	return Array{
 		data:  data,
 		shape: shape,
 	}
 }
 
-func Sum(arr Array, axis []int) T {
+func Sum(type T)(arr Array, axis []int) T {
 	var t T
 	return t
 }
