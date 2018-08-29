@@ -1,8 +1,9 @@
 package ndarray_test
 
 import (
-	"ndarray"
 	"testing"
+
+	"github.com/sbinet/go2-test/ndarray"
 )
 
 func TestArray1D(t *testing.T) {

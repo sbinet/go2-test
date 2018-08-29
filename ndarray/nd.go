@@ -5,7 +5,7 @@ type Array(type T) struct {
 	shape []int
 }
 
-func New(type T)(shape []int, data T) Array {
+func New(type T)(shape []int, data []T) Array {
 	return Array{
 		data:  data,
 		shape: shape,
@@ -13,6 +13,9 @@ func New(type T)(shape []int, data T) Array {
 }
 
 func Sum(type T)(arr Array, axis []int) T {
-	var t T
-	return t
+	var sum T
+	for _, v := range arr.data {
+		sum += v
+	}
+	return sum
 }
